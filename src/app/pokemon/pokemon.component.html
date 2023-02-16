@@ -1,0 +1,9 @@
+<p>ingresa el nombre de tu pokemon</p>
+
+<div>
+  <input type="text" [(ngModel)]="name" placeholder="Enter Pokemon name">
+  <button (click)="search()">Search</button>
+</div>
+<div *ngIf="urlImage">
+  <img [src]="urlImage" alt="Pokemon image">
+</div>
